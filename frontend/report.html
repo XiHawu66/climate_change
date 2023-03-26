@@ -19,8 +19,6 @@
     <link rel="shortcut icon" href="images/ico/icon.ico">
 
 
-    </script>
-
 
 
 </head><!--/head-->
@@ -200,6 +198,18 @@
 
                 <br>
                 <br>
+                <br>
+
+                <div>
+                    Greeting<br>
+                    <a id="greeting"></a>
+                </div>
+
+                <script type="text/javascript">
+                    greetingInfo = document.getElementById("greeting");
+                    greetingInfo.innerText = window.sessionStorage.getItem("greeting");
+                </script>
+
                 <br>
 
                 <div>
