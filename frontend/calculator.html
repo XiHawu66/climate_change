@@ -19,8 +19,6 @@
     <link rel="shortcut icon" href="images/ico/icon.ico">
 
 
-    </script>
-
     <script>
 
         document.getElementById('submit').addEventListener('click', function () {
@@ -39,8 +37,8 @@
                     window.sessionStorage.setItem('greeting',response.greeting);
                 }
             )
-
         }
+
 
     </script>
 
@@ -76,31 +74,29 @@
             <div class="gap"></div>
             <div class="row">
 
-                <form>
+                <form action="${pageContext.request.contextPath}/" method="post" id="getInput">
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="household">Number of people in your household</label>
-                            <input type="email" class="form-control" id="household" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <input type="number" class="form-control" id="household" name="household" placeholder="Enter email">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Natural Gas</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="number" class="form-control" id="gas" name="gas" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword2">Electricity</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                            <input type="number" class="form-control" id="electricity" name="gas" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword3">Fuel Oil</label>
-                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                            <input type="number" class="form-control" id="fuel" name="fuel" placeholder="Password">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="household">Propaner</label>
-                            <input type="email" class="form-control" id="household" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <input type="number" class="form-control" id="propaner" name="propaner" placeholder="Enter email">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Energy Supply State</label>
@@ -118,8 +114,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="household">Household Number</label>
-                            <input type="email" class="form-control" id="household" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <input type="email" class="form-control" id="household" placeholder="Enter email">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
