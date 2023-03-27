@@ -23,7 +23,7 @@
 
         document.getElementById('submit').addEventListener('click', function () {
             // check for and report errors here
-            for( var index = 0; index < document.forms.length; index++ ) {
+            for(let index = 0; index < document.forms.length; index++ ) {
                 document.forms[index].submit();
             }
         } );

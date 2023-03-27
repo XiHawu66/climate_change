@@ -2,6 +2,7 @@ package com.climate.model;
 
 public class Hello {
     private String greeting;
+    private String nmsl;
 
     public Hello() {
     }
