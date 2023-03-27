@@ -200,12 +200,14 @@
 
                 <div>
                     Greeting<br>
-                    <a id="greeting"></a>
+                    <p id="greeting"></p>
                 </div>
 
                 <script type="text/javascript">
                     greetingInfo = document.getElementById("greeting");
-                    greetingInfo.innerText = window.sessionStorage.getItem("greeting");
+                    var gas = "";
+                    gas = window.sessionStorage.getItem("gas");
+                    greetingInfo.innerText = window.sessionStorage.getItem("greeting") + ", This is your gas: " + gas;
                 </script>
 
                 <br>
