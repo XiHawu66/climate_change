@@ -33,14 +33,15 @@
                 response => {
                     console.log(response)
                     window.sessionStorage.setItem('greeting',response.greeting);
+
+                    var gas = document.getElementById("gas").value;
+                    console.log(gas)
+                    window.sessionStorage.setItem('gas',gas);
+
+                    location.href='report.html';
                 }
             )
 
-            var gas = document.getElementById("gas").value;
-            console.log(gas)
-            window.sessionStorage.setItem('gas',gas);
-
-            location.href='report.html';
         }
 
 
